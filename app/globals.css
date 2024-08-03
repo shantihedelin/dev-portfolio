@@ -1,0 +1,67 @@
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    margin: 0;
+    padding: 0;
+    background-color: #504099;
+}
+
+
+.skills {
+  min-width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #EA1179;
+  transition: transform 0.5s ease-in-out;
+}
+
+.skills:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.fullstack {
+    color: #FE7BE5;
+}
+
+.fullstack:hover {
+    color: #EA1179;
+}
+
+.flex-row-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Förhindrar vertikal skrollning i hela sidan */
+  html, body {
+    overflow-x: hidden;
+    margin: 0px;
+  }
+  
+  .flex-row-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .flex-row-scroll::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  .flex-row-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
