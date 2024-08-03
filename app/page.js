@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center">
         <h3 className="mt-24 flex justify-center text-5xl">I work with...</h3>
-        <div className="flex-row-scroll">
+        <div className="scroll-container">
           <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
             React
           </div>
@@ -51,9 +51,7 @@ export default function Home() {
           <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
             HTML
           </div>
-          <div className="skills">
-            CSS
-          </div>
+          <div className="skills">CSS</div>
           <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
             Javascript
           </div>

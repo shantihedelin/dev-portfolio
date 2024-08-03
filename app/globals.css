@@ -2,11 +2,14 @@
 @tailwind utilities;
 
 :root {
-    margin: 0;
-    padding: 0;
-    background-color: #504099;
+  margin: 0;
+  padding: 0;
+  background-color: #504099;
 }
 
+body {
+  margin: 0;
+}
 
 .skills {
   min-width: 160px;
@@ -16,52 +19,54 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #EA1179;
+  background-color: #ea1179;
   transition: transform 0.5s ease-in-out;
+  animation: scroll 20s linear infinite;
 }
 
 .skills:hover {
-    transform: scale(1.2);
-    transition-duration: 0.2s;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
 }
 
 .link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .fullstack {
-    color: #FE7BE5;
+  color: #fe7be5;
 }
 
 .fullstack:hover {
-    color: #EA1179;
+  color: #ea1179;
 }
 
-.flex-row-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 0;
-    scroll-behavior: smooth;
-  }
-  
-  /* Förhindrar vertikal skrollning i hela sidan */
-  html, body {
-    overflow-x: hidden;
-    margin: 0px;
-  }
-  
-  .flex-row-scroll::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .flex-row-scroll::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10px;
-  }
-  
-  .flex-row-scroll::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+.scroll-container {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  width: 100%;
+  position: relative;
+}
 
+.scroll-container::before,
+.scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  z-index: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
