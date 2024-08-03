@@ -21,7 +21,6 @@ body {
   text-align: center;
   background-color: #ea1179;
   transition: transform 0.5s ease-in-out;
-  animation: scroll 20s linear infinite;
 }
 
 .skills:hover {
@@ -43,30 +42,13 @@ body {
 }
 
 .scroll-container {
-  display: flex;
-  overflow-x: hidden;
-  white-space: nowrap;
-  padding: 1rem 0;
-  margin: 2rem 0;
+  overflow: hidden;
   width: 100%;
   position: relative;
 }
 
-.scroll-container::before,
-.scroll-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 2rem;
-  z-index: 1;
+.scroll-content {
+  display: flex;
+  white-space: nowrap;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}

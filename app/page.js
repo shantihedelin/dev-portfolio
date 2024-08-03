@@ -1,10 +1,35 @@
+"use client";
+
 import headshotImg from "../public/headshot.jpg";
 import Image from "next/image";
 import ProjectSectionList from "@/components/HeroSection";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
 
 export default function Home() {
+  // useEffect för scrollen till skillsen
+  useEffect(() => {
+    const container = document.querySelector(".scroll-content");
+    const clone = container.innerHTML;
+    container.innerHTML += clone;
+
+    let scrollSpeed = 0.5; // controls the speed of the scroll
+    let scrollPos = 0;
+    const scrollWidth = container.scrolllWidth / 2;
+
+    const animateScroll = () => {
+      scrollPos += scrollSpeed;
+      if (scrollPos >= scrollWidth) {
+        scrollPos = 0;
+      }
+      container.style.transform = `translateX(-${scrollPos}px)`;
+      requestAnimationFrame(animateScroll);
+    };
+
+    animateScroll();
+  }, []);
+
   return (
     <main className="text-white">
       <Nav />
@@ -39,36 +64,38 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <h3 className="mt-24 flex justify-center text-5xl">I work with...</h3>
         <div className="scroll-container">
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            React
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Next.js
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            MySQL
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            HTML
-          </div>
-          <div className="skills">CSS</div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Javascript
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            AWS
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Docker
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Tailwind
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Express.js
-          </div>
-          <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            Node js
+          <div className="scroll-content">
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              React
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Next.js
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              MySQL
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              HTML
+            </div>
+            <div className="skills">CSS</div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Javascript
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              AWS
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Docker
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Tailwind
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Express.js
+            </div>
+            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
+              Node js
+            </div>
           </div>
         </div>
       </div>
