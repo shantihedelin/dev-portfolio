@@ -1,5 +1,7 @@
 "use client";
 
+//TODO: fixa bugg när man skiftar mellan mobilvy och desktop så slutar dom åka
+
 import headshotImg from "../public/headshot.jpg";
 import Image from "next/image";
 import ProjectSectionList from "@/components/HeroSection";
@@ -70,15 +72,16 @@ export default function Home() {
             <h2 className="text-5xl m-0">
               Hello, my name is Shanti Hedelin, i'm a{" "}
               <span className="fullstack">frontend developer</span>
-            </h2>          <div className="relative h-96 my-4 w-full">
-            <Image
-              src={headshotImg}
-              layout="responsive"
-              objectFit="conver"
-              alt="Headshot of Shanti Hedelin"
-              className="border rounded-xl mt-6"
-            />
-          </div>
+            </h2>{" "}
+            <div className="relative h-96 my-4 w-full">
+              <Image
+                src={headshotImg}
+                layout="responsive"
+                objectFit="conver"
+                alt="Headshot of Shanti Hedelin"
+                className="border rounded-xl mt-6"
+              />
+            </div>
             <p className="pt-8">
               Welcome to my page. I am a dedicated frontend developer with
               significant experience in building high-performance and secure
@@ -92,7 +95,6 @@ export default function Home() {
               View Resume
             </button>
           </div>
-
         </div>
       </div>
 
