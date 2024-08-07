@@ -4,22 +4,29 @@
 :root {
   margin: 0;
   padding: 0;
-  background-color: #504099;
 }
 
 body {
   margin: 0;
+  background-image: url("/images/milad-fakurian-GJKx5lhwU3M-unsplash.jpg");
+  background-size: cover;
 }
 
 .skills {
   min-width: 160px;
   height: 160px;
+  margin-left: 6px;
+  margin-right: 6px;
+
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: large;
   background-color: #ea1179;
+  background-color: white;
+  color: black;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -34,11 +41,12 @@ body {
 }
 
 .fullstack {
-  color: #fe7be5;
+  color: #ea1179;
+  transition-duration: 0.5s;
 }
 
 .fullstack:hover {
-  color: #ea1179;
+  color: #31152c;
 }
 
 .scroll-container {
@@ -51,4 +59,3 @@ body {
   display: flex;
   white-space: nowrap;
 }
-

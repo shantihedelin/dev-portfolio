@@ -8,7 +8,7 @@ function Nav() {
   return (
     <>
       <nav className="w-full flex justify-between items-center h-20 mb-12">
-        <h3 className="text-4xl font-bold ml-4">Shanti Hedelin</h3>
+        <h3 className="text-2xl font-bold ml-4">Shanti Hedelin</h3>
 
         <div className="">
 

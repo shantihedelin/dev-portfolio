@@ -43,17 +43,19 @@ export default function Home() {
               alt="Headshot of Shanti Hedelin"
             />
           </div>
-          <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12">
-            <h2 className="text-4xl m-0">
+          <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12 bg-purple-500 p-8 rounded-xl shadow-2xl bg-opacity-50" >
+            <h2 className="text-5xl m-0">
               Hello, my name is Shanti Hedelin, i'm a{" "}
-              <span className="fullstack">fullstack developer</span>
+              <span className="fullstack">frontend developer</span>
             </h2>
-            <p>
-              Jag är en passionerad fullstack developer som bygger hemsidor och
-              strävar efter att skriva enkel och smart kod med hög säkerhet. Jag
-              är bra på att jobba i team och vill alltid uppnå bästa möjliga
-              resultat och lägger gärna lite extra tid på detaljer för att det
-              ska bli en så bra användarupplevelse som möjligt för användarna.
+            <p className="pt-20">
+              Welcome to my page. I am a dedicated frontend developer with significant experience in
+              building high-performance and secure websites, and I also have
+              strong backend development skills. I work well in teams and strive
+              to deliver smart and intuitive code. I'm detail-oriented and
+              prioritize creating an optimal user experience. My focus and
+              dedication ensure that I always aim to achieve the best possible
+              results for every project I work on.
             </p>
             <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-8">
               View Resume
@@ -62,9 +64,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <h3 className="mt-24 flex justify-center text-5xl">I work with...</h3>
-        <div className="scroll-container">
-          <div className="scroll-content">
+        <h3 className="mt-24 flex justify-center text-5xl text-[#ea1179">I work with...</h3>
+        <div className="scroll-container h-56 flex justify-center items-center">
+          <div className="scroll-content space-x-8">
             <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
               React
             </div>

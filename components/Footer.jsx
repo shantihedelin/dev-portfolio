@@ -9,15 +9,13 @@ export default function Footer() {
       <div className="links flex justify-center space-x-6 pt-12">
         <a
           href="https://www.linkedin.com/in/shanti-hedelin-12129b22b/"
-          className="text-[#FE7BE5] hover:text-[#EA1179]"
+          className=" hover:text-[#EA1179]"
         >
           Linkedin
         </a>
-        <a href="https://github.com/shantihedelin" className="text-[#FE7BE5] hover:text-[#EA1179]">
+        <a href="https://github.com/shantihedelin" className=" hover:text-[#EA1179]">
           Github
         </a>
-        <a className="text-[#FE7BE5] hover:text-[#EA1179]">Maybe another link</a>
-        <a className="text-[#FE7BE5] hover:text-[#EA1179]">Maybe another link</a>
       </div>
     </div>
   );
