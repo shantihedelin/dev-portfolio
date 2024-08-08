@@ -17,16 +17,11 @@ body {
   height: 160px;
   margin-left: 6px;
   margin-right: 6px;
-
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: large;
-  background-color: #ea1179;
-  background-color: white;
-  color: black;
   transition: transform 0.5s ease-in-out;
 }
 

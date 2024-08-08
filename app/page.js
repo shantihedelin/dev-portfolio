@@ -8,6 +8,16 @@ import ProjectSectionList from "@/components/HeroSection";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import awsImg from "../public/images/aws.svg";
+import htmlImg from "../public/images/html.svg";
+import cssImg from "../public/images/css.svg";
+import dockerImg from "../public/images/docker.svg";
+import javascriptImg from "../public/images/javascript.svg";
+import mysqlImg from "../public/images/mysql.svg";
+import nextImg from "../public/images/next.svg";
+import nodeImg from "../public/images/node.svg";
+import reactImg from "../public/images/react.svg";
+import tailwindImg from "../public/images/tailwind.svg";
 
 export default function Home() {
   // useEffect för scrollen till skillsen
@@ -44,28 +54,27 @@ export default function Home() {
               &nbsp;and I like to build
             </h2>
           </div>
-          <div className="flex flex-row">
-            <div className="flex flex-col">
-              <p className="pt-20 text-black">
+          <div className="flex flex-row w-full items-center mt-36">
+            <div className="flex flex-col w-full justify-center items-center">
+              <p className="text-black text-lg justify-center text-center">
                 Welcome to my page. I am a dedicated frontend developer from
                 Sweden with significant experience in building high-performance
-                and secure websites, and I also have strong backend development
+                and secure websites, and I also have essential backend development
                 skills. I work well in teams and strive to deliver smart and
                 intuitive code. I'm detail-oriented and prioritize creating an
                 optimal user experience. My focus and dedication ensure that I
                 always aim to achieve the best possible results for every
                 project I work on.
               </p>
-              <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-8">
+              <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-16">
                 View Resume
               </button>
             </div>
-            <div className="my-4">
+            <div className="my-4 w-full ml-20">
               <Image
                 src={headshotImg}
-                layout="responsive"
                 alt="Headshot of Shanti Hedelin"
-                className="border rounded-full"
+                className="border rounded-full w-full h-auto"
               />
             </div>
           </div>
@@ -113,35 +122,94 @@ export default function Home() {
         <div className="scroll-container h-56 flex justify-center items-center">
           <div className="scroll-content space-x-8">
             <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              React
+            <Image
+                src={reactImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="react logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Next.js
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={nextImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="next logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              MySQL
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={mysqlImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="mysql logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              HTML
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={htmlImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="html logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="skills">CSS</div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Javascript
+            <div className="skills">
+            <Image
+                src={cssImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="css logo"
+                className="border rounded-xl mt-6"
+              /></div>
+            
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={javascriptImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="javascript logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              AWS
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={awsImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="aws logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Docker
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={dockerImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="docker logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Tailwind
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={tailwindImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="tailwind logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Express.js
-            </div>
-            <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-              Node js
+            <div className=" rounded-full flex items-center justify-center skills">
+              <Image
+                src={nodeImg}
+                layout="responsive"
+                objectFit="cover"
+                alt="node logo"
+                className="border rounded-xl mt-6"
+              />
             </div>
           </div>
         </div>
