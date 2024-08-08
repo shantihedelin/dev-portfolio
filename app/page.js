@@ -36,40 +36,47 @@ export default function Home() {
     <main className="text-white">
       <Nav />
       <div className="hidden m-12 md:flex md:m-8">
-        <div className="flex items-center  flex-col md:flex-row md:m-4 md:space-x-8">
-          <div className="relative h-96 my-4 w-full">
-            <Image
-              src={headshotImg}
-              layout="responsive"
-              objectFit="conver"
-              alt="Headshot of Shanti Hedelin"
-            />
-          </div>
-          <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12 bg-purple-500 p-8 rounded-xl shadow-2xl bg-opacity-40">
-            <h2 className="text-5xl m-0">
-              Hello, my name is Shanti Hedelin, i'm a{" "}
-              <span className="fullstack">frontend developer</span>
+        <div className="flex items-center flex-col md:m-4 ">
+          <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12">
+            <h2 className="text-7xl m-0 text-black pt-24 pb-16">
+              Hello, my name is Shanti, I'm a{" "}
+              <span className="fullstack">frontend developer,</span>
+              &nbsp;and I like to build
             </h2>
-            <p className="pt-20">
-              Welcome to my page. I am a dedicated frontend developer with
-              significant experience in building high-performance and secure
-              websites, and I also have strong backend development skills. I
-              work well in teams and strive to deliver smart and intuitive code.
-              I'm detail-oriented and prioritize creating an optimal user
-              experience. My focus and dedication ensure that I always aim to
-              achieve the best possible results for every project I work on.
-            </p>
-            <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-8">
-              View Resume
-            </button>
+          </div>
+          <div className="flex flex-row">
+            <div className="flex flex-col">
+              <p className="pt-20 text-black">
+                Welcome to my page. I am a dedicated frontend developer from
+                Sweden with significant experience in building high-performance
+                and secure websites, and I also have strong backend development
+                skills. I work well in teams and strive to deliver smart and
+                intuitive code. I'm detail-oriented and prioritize creating an
+                optimal user experience. My focus and dedication ensure that I
+                always aim to achieve the best possible results for every
+                project I work on.
+              </p>
+              <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-8">
+                View Resume
+              </button>
+            </div>
+            <div className="my-4">
+              <Image
+                src={headshotImg}
+                layout="responsive"
+                alt="Headshot of Shanti Hedelin"
+                className="border rounded-full"
+              />
+            </div>
           </div>
         </div>
       </div>
 
+      {/* för mobil */}
       <div className="m-12 flex md:hidden">
         <div className="flex items-center  flex-col md:flex-row md:m-4 md:space-x-8">
           <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12">
-            <h2 className="text-5xl m-0">
+            <h2 className="text-5xl m-0 text-black">
               Hello, my name is Shanti Hedelin, i'm a{" "}
               <span className="fullstack">frontend developer</span>
             </h2>{" "}
@@ -77,19 +84,20 @@ export default function Home() {
               <Image
                 src={headshotImg}
                 layout="responsive"
-                objectFit="conver"
+                objectFit="cover"
                 alt="Headshot of Shanti Hedelin"
                 className="border rounded-xl mt-6"
               />
             </div>
-            <p className="pt-8">
-              Welcome to my page. I am a dedicated frontend developer with
-              significant experience in building high-performance and secure
-              websites, and I also have strong backend development skills. I
-              work well in teams and strive to deliver smart and intuitive code.
-              I'm detail-oriented and prioritize creating an optimal user
-              experience. My focus and dedication ensure that I always aim to
-              achieve the best possible results for every project I work on.
+            <p className="pt-8 text-black">
+              Welcome to my page. I am a dedicated frontend developer from
+              Sweden with significant experience in building high-performance
+              and secure websites, and I also have strong backend development
+              skills. I work well in teams and strive to deliver smart and
+              intuitive code. I'm detail-oriented and prioritize creating an
+              optimal user experience. My focus and dedication ensure that I
+              always aim to achieve the best possible results for every project
+              I work on.
             </p>
             <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-8">
               View Resume
@@ -99,7 +107,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center">
-        <h3 className="mt-24 flex justify-center text-5xl text-[#ea1179">
+        <h3 className="mt-24 flex justify-center text-5xl text-black">
           I work with...
         </h3>
         <div className="scroll-container h-56 flex justify-center items-center">
@@ -138,7 +146,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h3 className="flex justify-center text-5xl pt-12">Projects</h3>
+      <h3 className="flex justify-center text-5xl pt-12 text-black">
+        My projects
+      </h3>
       <ProjectSectionList />
       <Footer />
     </main>
