@@ -10,6 +10,7 @@ body {
   margin: 0;
   background-image: url("/images/milad-fakurian-GJKx5lhwU3M-unsplash.jpg");
   background-size: cover;
+  
 }
 
 .skills {
@@ -53,4 +54,29 @@ body {
 .scroll-content {
   display: flex;
   white-space: nowrap;
+}
+
+.title {
+  font-size: 30px;
+    font-weight: normal;
+    line-height: 1.33333;
+    border-bottom: 2px solid #ea1179;
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+.title:hover {
+  border-bottom-color: white;
+  transition-duration: 0.2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

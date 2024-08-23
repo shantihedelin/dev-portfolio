@@ -48,7 +48,13 @@ export default function Home() {
       <div className="hidden m-12 md:flex md:m-8">
         <div className="flex items-center flex-col md:m-4 ">
           <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12">
-            <h2 className="text-7xl m-0 text-black pt-24 pb-16">
+            <h2
+              className="text-7xl m-0 text-black pt-24 pb-16 opacity-0 animate-fadeInUp"
+              style={{
+                animation: "fadeInUp 1s ease-out forwards",
+                animationDelay: "0.3s",
+              }}
+            >
               Hello, my name is Shanti, I'm a{" "}
               <span className="fullstack">frontend developer,</span>
               &nbsp;and I like to build
@@ -59,12 +65,12 @@ export default function Home() {
               <p className="text-black text-lg justify-center text-center">
                 Welcome to my page. I am a dedicated frontend developer from
                 Sweden with significant experience in building high-performance
-                and secure websites, and I also have essential backend development
-                skills. I work well in teams and strive to deliver smart and
-                intuitive code. I'm detail-oriented and prioritize creating an
-                optimal user experience. My focus and dedication ensure that I
-                always aim to achieve the best possible results for every
-                project I work on.
+                and secure websites, and I also have essential backend
+                development skills. I work well in teams and strive to deliver
+                smart and intuitive code. I'm detail-oriented and prioritize
+                creating an optimal user experience. My focus and dedication
+                ensure that I always aim to achieve the best possible results
+                for every project I work on.
               </p>
               <button className="bg-transparent bg-white w-64 border p-4 shadow-xl rounded-3xl hover:cursor-pointer hover:w-96 transistion duration-300 ease-in-out mt-16">
                 View Resume
@@ -85,7 +91,13 @@ export default function Home() {
       <div className="m-12 flex md:hidden">
         <div className="flex items-center  flex-col md:flex-row md:m-4 md:space-x-8">
           <div className="flex justify-center flex-col items-center mb-2 md:text-center md:space-y-12">
-            <h2 className="text-5xl m-0 text-black">
+            <h2
+              className="text-5xl m-0 text-black opacity-0 animate-fadeInUp"
+              style={{
+                animation: "fadeInUp 1s ease-out forwards",
+                animationDelay: "0.3s",
+              }}
+            >
               Hello, my name is Shanti Hedelin, i'm a{" "}
               <span className="fullstack">frontend developer</span>
             </h2>{" "}
@@ -122,7 +134,7 @@ export default function Home() {
         <div className="scroll-container h-56 flex justify-center items-center">
           <div className="scroll-content space-x-8">
             <div className="h-40 w-40 rounded-full flex items-center justify-center skills">
-            <Image
+              <Image
                 src={reactImg}
                 layout="responsive"
                 objectFit="cover"
@@ -158,14 +170,15 @@ export default function Home() {
               />
             </div>
             <div className="skills">
-            <Image
+              <Image
                 src={cssImg}
                 layout="responsive"
                 objectFit="cover"
                 alt="css logo"
                 className="border rounded-xl mt-6"
-              /></div>
-            
+              />
+            </div>
+
             <div className=" rounded-full flex items-center justify-center skills">
               <Image
                 src={javascriptImg}
