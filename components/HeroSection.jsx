@@ -35,8 +35,8 @@ const ProjectSectionList = () => {
           <Image
             src={image}
             alt={title}
-            height="200"
-            className="rounded-t-lg w-full flex justify-center items-center"
+            height="350"
+            className="rounded-t-lg w-full flex justify-center items-center object-contain"
           />
         </div>
         <div>
