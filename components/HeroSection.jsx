@@ -1,30 +1,36 @@
 import Image from "next/image";
 import RadioPlayerImg from "../public/ProjRadioPlayer.png";
-import ToDoImg from "../public/ProjToDo.png";
+import mockupLudi from "../public/mockup-ludi.jpg";
+import mockupWeatherApp from "../public/mockup-weather-app.jpg";
 
 const ProjectSectionList = () => {
   const projects = [
+    {
+      title: "Ludi App",
+      description: "Here is my description of the project",
+      liveLink: "https://ludi-app.com/",
+      Github: "https://github.com/axelcfk/chas-challenge2",
+      image: mockupLudi,
+    },
+    {
+      title: "Weather App",
+      description: "Weather app created with..",
+      liveLink: "https://weather-app-mocha-two-41.vercel.app/",
+      Github: "https://github.com/shantihedelin/weather-app",
+      image: mockupWeatherApp,
+    },
     {
       title: "Swedish Radio Players",
       description: "Here is my description of the project",
       liveLink: "https://react-radioplayer.vercel.app/",
       Github: "https://github.com/shantihedelin/ReactRadioplayer",
-      image: RadioPlayerImg
-    },
-    {      
-      image: ToDoImg,
-      title: "Digital To Do List",
-      description: "Here is my description of the project",
-      liveLink: "https://todo-list-workshop.vercel.app/",
-      Github: "https://github.com/shantihedelin/TodoListWorkshop",
-
+      image: RadioPlayerImg,
     },
   ];
 
   const ProjectCard = ({ title, description, liveLink, Github, image }) => (
     <div className=" bg-white border-solid border-2 shadow-lg rounded-lg overflow-hidden m-8 flex flex-col justify-center items-center lg:mx-72 lg:h-80 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
         <div className="w-full">
           <Image
             src={image}
@@ -69,7 +75,6 @@ const ProjectSectionList = () => {
       </div>
     </div>
   );
-  
 
   return projects.map((project, index) => (
     <ProjectCard
@@ -78,7 +83,7 @@ const ProjectSectionList = () => {
       description={project.description}
       liveLink={project.liveLink}
       Github={project.Github}
-      image = {project.image}
+      image={project.image}
     />
   ));
 };

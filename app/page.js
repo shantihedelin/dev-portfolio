@@ -52,7 +52,7 @@ export default function Home() {
               className="text-7xl m-0 text-black pt-24 pb-16 opacity-0 animate-fadeInUp"
               style={{
                 animation: "fadeInUp 1s ease-out forwards",
-                animationDelay: "0.3s",
+                animationDelay: "0.1s",
               }}
             >
               Hello, my name is Shanti, I'm a{" "}
@@ -62,7 +62,10 @@ export default function Home() {
           </div>
           <div className="flex flex-row w-full items-center mt-36">
             <div className="flex flex-col w-full justify-center items-center">
-              <p className="text-black text-lg justify-center text-center">
+              <p className="text-black text-lg justify-center text-center opacity-0 animate-fadeInUp" style={{
+                animation: "fadeInUp 1s ease-out forwards",
+                animationDelay: "0.5s",
+              }}>
                 Welcome to my page. I am a dedicated frontend developer from
                 Sweden with significant experience in building high-performance
                 and secure websites, and I also have essential backend
@@ -76,7 +79,10 @@ export default function Home() {
                 View Resume
               </button>
             </div>
-            <div className="my-4 w-full ml-20">
+            <div className="my-4 w-full ml-20 opacity-0 animate-fadeInUp" style={{
+                animation: "fadeInUp 1s ease-out forwards",
+                animationDelay: "1.0s",
+              }}>
               <Image
                 src={headshotImg}
                 alt="Headshot of Shanti Hedelin"
@@ -101,7 +107,10 @@ export default function Home() {
               Hello, my name is Shanti Hedelin, i'm a{" "}
               <span className="fullstack">frontend developer</span>
             </h2>{" "}
-            <div className="relative h-96 my-4 w-full">
+            <div className="relative h-96 my-4 w-full opacity-0 animate-fadeInUp" style={{
+                animation: "fadeInUp 1s ease-out forwards",
+                animationDelay: "0.8s",
+              }}>
               <Image
                 src={headshotImg}
                 layout="responsive"
