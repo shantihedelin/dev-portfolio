@@ -7,21 +7,23 @@ const ProjectSectionList = () => {
   const projects = [
     {
       title: "Ludi App",
-      description: "Here is my description of the project",
+      description:
+        "This Movie Recommendation Website uses React, Node.js, and MySQL to offer personalized film suggestions via TMDB and OpenAI APIs. Users create accounts, set preferences, and receive weekly AI-driven recommendations. I served as Scrum Master and developer, and the project won first prize in a school competition. ",
       liveLink: "https://ludi-app.com/",
       Github: "https://github.com/axelcfk/chas-challenge2",
       image: mockupLudi,
     },
     {
       title: "Weather App",
-      description: "Weather app created with..",
+      description:
+        "Weather app created with React. Search for current weather information in different citites and see 5-day forecast.",
       liveLink: "https://weather-app-mocha-two-41.vercel.app/",
       Github: "https://github.com/shantihedelin/weather-app",
       image: mockupWeatherApp,
     },
     {
       title: "Swedish Radio Players",
-      description: "Here is my description of the project",
+      description: "School project where we fetch swedish radio players api.",
       liveLink: "https://react-radioplayer.vercel.app/",
       Github: "https://github.com/shantihedelin/ReactRadioplayer",
       image: RadioPlayerImg,
